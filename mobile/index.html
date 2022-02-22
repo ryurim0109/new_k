@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW K</title>
+    <link rel="stylesheet" href="/newk/mobile/css/swipe.css">
+    <script src="/newk/mobile/js/swipe.js"></script>
+    <link rel="stylesheet" href="/newk/mobile/css/reset.css">
+    <link rel="stylesheet" href="/newk/mobile/css/common.css">
+    <link rel="stylesheet" href="/newk/mobile/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous'/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js "></script>
+    <script src="/newk/mobile/js/common.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+
+    
+</head>
+<body>
+    <!-- 상단영역 시작 -->
+    <header>
+        <h1 id="logo"><a href="#"><img src="/newk/mobile/images/logo.jpg" alt="newk"></a></h1>
+        <nav id="menu">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </nav>
+        <nav id="search">
+            <a href="#"><img src="/newk/mobile/images/mobilesearch.png" alt="검색아이콘"></a>
+        </nav>
+        <!-- 햄버거 메뉴 영역 시작 -->
+              <nav id="hideMenu_wrap">
+                <div id="hideMenu">
+                  <div id="hideBtn">
+                      <div id="setting"><a href="#"><img src="/newk/mobile/images/setting.png" alt="환경설정 버튼"></a></div>
+                      <div id="bell"><a href="#"><img src="/newk/mobile/images/bell.png" alt="알림버튼"></a></div>
+                      <div id="close_btn"><a href="#"><img src="/newk/mobile/images/X.png" alt="닫힘버튼"></a></div>
+                  </div>
+                  <div id="hideProfile">
+                      <p id="ProfileImg"><img src="/newk/mobile/images/ghost.png" alt="프로필이미지"></p>
+                      <p id="ProfileText">동동스</p>
+                  </div>
+                      <ul id="hideMenuList">
+                        <li><a href="#">공지사항<span><img src="/newk/mobile/images/arrow_right.png" alt="화살표이미지"></span></a>
+                          <ul class="hideSubMenu">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">NEW K에게 문의하기</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">설정<span><img src="/newk/mobile/images/arrow_right.png" alt="화살표이미지"></span></a>
+                          <ul class="hideSubMenu">
+                            <li><a href="#">프로필 설정</a></li>
+                            <li><a href="#">알림 설정</a></li>
+                          </ul>
+                        </li>
+                          <li><a href="#">위시리스트</a></li>
+                          <li><a href="#">내소식<span><img src="/newk/mobile/images/arrow_right.png" alt="화살표이미지"></span></a>
+                            <ul class="hideSubMenu">
+                              <li><a href="#">내가 남긴글</a></li>
+                              <li><a href="#">내가 올린 사진</a></li>
+                              <li><a href="#">나의 좋아요</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">로그아웃</a></li>
+                      </ul>
+                  </div>
+                  
+              </nav>
+        <!-- 햄버거 메뉴 영역 시작 -->
+    </header>
+    <!-- 상단영역끝 -->
+    <!-- 메인비쥬얼영역시작 -->
+    <section id="visual_wrap" class="swiper mySwiper">
+      <ul id="visual_list" class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <p class="visual_img"><a href="#"><img src="/newk/mobile/images/mobile_vs01.jpg" alt="비진도 이미지"></a></p>
+                    <p class="visual_text"><a href="#">여기가<br> 진짜 한국이라구요?<br>NEW K가 이색적인 한국을<br> 소개해드릴게요!</a></p>
+                </li>
+                <li class="swiper-slide">
+                    <p class="visual_img"><a href="#"><img src="/newk/mobile/images/mobile_vs02.jpg" alt="혼자 앉아있는 남자이미지"></a></p>
+                    <p class="visual_text"><a href="#">혼자 여행은 <br>고독이 제 맛이죠!<br>혼자서도 알차고 재미있게!!</a></p>
+                </li>
+                <li class="swiper-slide">
+                    <p class="visual_img"><a href="#"><img src="/newk/mobile/images/mobile_vs03.jpg" alt="비진도 이미지"></a></p>
+                    <p class="visual_text"><a href="#">반려견과 떨어지기<br>힘들어<br>여행을 망설 이 시나요?</a></p>
+                </li> 
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+           
+       </section>
+        <!-- 메인비쥬얼영역끝 -->
+        <!-- 바로가기 메뉴 영역시작 -->
+        <section id="goMenu">
+            <h2 class="hidden">메뉴영역</h2>
+            <ul id="goMenu_list">
+                <li>
+                    <a href="/newk/mobile/newktrip/newktrip.html"><img src="/newk/mobile/images/location_on.png" alt="위치아이콘"></a>
+                    <a href="/newk/mobile/newktrip/newktrip.html">NEW K여행지</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/restaurant_menu.png" alt="식당아이콘"></a>
+                    <a href="#">맛집</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/local_cafe.png" alt="카페아이콘"></a>
+                    <a href="#">카페</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/nature_people.png" alt="축제아이콘"></a>
+                    <a href="#">NEW K 축제</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/chat.png" alt="여행글아이콘"></a>
+                    <a href="#">여행글</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/collections.png" alt="사진갤러리아이콘"></a>
+                    <a href="#">사진갤러리</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/emoji_people.png" alt="1인여행자아이콘"></a>
+                    <a href="#">1인 여행자</a>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/pets.png" alt="반려견아이콘"></a>
+                    <a href="#">반려견과 함께</a>
+                </li>
+            </ul>
+        </section>
+        <!-- 바로가기 메뉴 영역끝 -->
+        <!-- 외국같은이색여행지 영역 시작 -->
+        <section id="hotplace_wrap">
+            <h2 class="contents_title"><a href="#">외국같은 이색 여행지</a></h2>
+            <div class="swiper mySwiper2">
+              <ul id="hotplace" class="swiper-wrapper">
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination01.jpg" alt="안동 만휴정"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination02.jpg" alt="제주도 도두봉"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination03.jpg" alt="남해 독일마을"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination04.jpg" alt="고성 상족암군립공원"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination05.jpg" alt="소노캄 제주"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination06.jpg" alt="태안 신두리해안사구"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination07.jpg" alt="사천시맨스"></a></li>
+                <li class="swiper-slide"><a href="#"><img src="/newk/mobile/images/destination08.jpg" alt="안동 낙강물길공원"></a></li>
+              </ul>
+          </div>
+        </section>
+        <!-- 외국같은이색여행지 영역 끝 -->
+        <!-- 이런여행은어떠세요 영역 시작 -->
+        <section id="aboutTrip_wrap">
+            <h2 class="contents_title"><a href="#">이런 여행은 어떠세요?</a></h2>
+            <div class="swiper mySwiper3">
+                <ul id="aboutTrip" class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <p class="aboutTrip_img lighter"><img src="/newk/mobile/images/aboutTrip01.png" alt="캠핑일러스트"></p>
+                        <p class="aboutTrip_title"><a href="#">언택트 캠핑</a></p>
+                        <p class="aboutTrip_text"><a href="#">일상에서 벗어나...</a></p>
+                    </li>
+                    <li class="swiper-slide">
+                        <p class="aboutTrip_img secondary"><img src="/newk/mobile/images/aboutTrip02.png" alt="튜브타고있는 일러스트"></p>
+                        <p class="aboutTrip_title"><a href="#">호캉스</a></p>
+                        <p class="aboutTrip_text"><a href="#">바쁜 평일을 보낸 ...</a></p>
+                    </li>
+                    <li class="swiper-slide">
+                        <p class="aboutTrip_img lighter"><img src="/newk/mobile/images/aboutTrip03.png" alt="등산하는 일러스트"></p>
+                        <p class="aboutTrip_title"><a href="#">소도시 여행</a></p>
+                        <p class="aboutTrip_text"><a href="#">인기 관광지는 한...</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 이런여행은어떠세요 영역 끝 -->
+        <!-- 축제소식 시작 -->
+        <section id="festival_wrap">
+            <h2 class="hidden">축제소식영역</h2>
+            <div id="festival">
+                [축제소식]  07.24~08.16 태백 해바라기 축제 <span><i class="fas fa-plus-square"></i></span>
+            </div>
+        </section>
+        <!-- 축제소식 끝 -->
+        <!-- 여헹글 공유시작 -->
+        <section id="shareTrip_wrap" class="clearFix">
+            <h2 class="contents_title"><a href="#">여행글 공유</a></h2>
+            <ul id="shareTrip">
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/mobileshare01.jpg" alt="강원도 이미지"></a>
+                    <div class="share_t">
+                        <a href="#"><img src="/newk/mobile/images/account_circle.png" alt="프로필"><span>여행자1</span></a>
+                        <p class="share_text">안녕하세요. 여행자1입니다.
+                            이번주 강원도로 힐링 여행을 다녀왔는데요. 제가 추천드릴 장소는 바로 강원도 평창의 육백마지기...</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/mobileshare02.jpg" alt="호텔 이미지"></a>
+                    <div class="share_t">
+                        <a href="#"><img src="/newk/mobile/images/account_circle.png" alt="프로필"><span>여행자2</span></a>
+                        <p class="share_text">안녕하세요. 여행자1입니다.
+                            이번주 강원도로 힐링 여행을 다녀왔는데요. 제가 추천드릴 장소는 바로 강원도 평창의 육백마지기...</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="/newk/mobile/images/mobileshare03.jpg" alt="강원도 이미지"></a>
+                    <div class="share_t">
+                        <a href="#"><img src="/newk/mobile/images/account_circle.png" alt="프로필"><span>여행자3</span></a>
+                        <p class="share_text">안녕하세요. 여행자1입니다.
+                            이번주 강원도로 힐링 여행을 다녀왔는데요. 제가 추천드릴 장소는 바로 강원도 평창의 육백마지기...</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- 여헹글 공유끝 -->
+        <!-- 허니문호텔 배너시작 -->
+        <div id="couple_wrap">
+            <div id="couple_banner">
+                <img src="/newk/mobile/images/couple.png" alt="신혼부부 일러스트">
+                <p>
+                    <a id="couple_title">외국을 가지 못하는<br> 신혼부부를 위해!</a>
+                    <a id="couple_text">NEW K PICK 국내 이색 호텔 모음집</a>
+                </p>
+            </div>
+        </div>
+        <!-- 허니문호텔 배너끝 -->
+        <!-- 하단영역 시작 -->
+        <footer>
+                <ul id="sns">
+                    <li><a href="#"><img src="/newk/mobile/images/footKakaoTalk.png" alt="카카오톡바로가기"></a></li>
+                    <li><a href="#"><img src="/newk/mobile/images/Instagram - Original.png" alt="인스타그램바로가기"></a></li>
+                    <li><a href="#"><img src="/newk/mobile/images/YouTube - Original.png" alt="유튜브바로가기"></a></li>
+                </ul>
+                <ul id="footMenu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">도움말</a></li>
+                </ul>
+                <p id="copy">Copyright ⓒ New K All Rights Reserved. </p>
+        </footer>
+        <!-- 히단영역 끝 -->
+
+</body>
+</html>

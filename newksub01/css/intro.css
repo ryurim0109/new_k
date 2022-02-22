@@ -1,0 +1,131 @@
+/* 콘텐츠 영역 시작 */
+/* 인트로 타이틀 영역 시작 */
+div#introTitle_wrap{
+    width: 100%; height: 530px; float: left; background:  #BF9BFF; position: relative;
+    min-width: 768px;
+}
+section#introTitle_inner{
+    width: 1200px; height: 100%; position: relative;
+    margin: 0 auto;
+}
+h2#intro_title{
+    width: 300px; height: 300px; background: #F1F1EC;
+    position: absolute; left: 50%; margin-left: -150px; top:50%; margin-top: -150px;
+    border-radius: 150px;
+}
+h2#intro_title{
+    text-align: center; padding-top: 90px; box-sizing: border-box;
+    font: bold 1.938rem "Noto Sans KR";
+}
+h2#intro_title span{
+    font-size: 2.250rem;
+}
+div#intro_textbox{
+    position: absolute; top:0; left: 0;
+}
+div#intro_line{
+    width: 1px; height: 265px; background: #333333;
+    position: absolute; left: 50%; margin-left: -0.5px; top:415px;
+    z-index: 8;
+}
+div#intro_line::after{
+    content: ""; display: block;
+    width: 7px; height: 7px; background: #333;
+    border-radius: 3.5px;
+    position: absolute; bottom: 0; left: -3.5px; z-index: 9;
+}
+/* 인트로 타이틀 영역 끝 */
+/* 인트로 영역 시작 */
+div#intro_wrap{
+    width: 100%; height:  1000px; position: relative; top:0; left: 0;
+    float: left;  min-width: 768px;
+}
+section#intro_inner{
+    width:1200px;  height: 100%; margin: 0 auto;
+}
+div#intro_box{
+   width: 100%; float: left; margin-top: 134px;
+}
+ul#introBox_list{
+    width:85.5%; position: relative; left:50%; margin-left: -42.75%; top:0;
+}
+ul#introBox_list li{
+   width: 300px; height: 300px; float:left; border-radius: 150px;
+   overflow: hidden; margin-right:63px; position: relative; top:0; left: 0;
+}
+/* ul#introBox_list li.close::after{
+    content: ""; display: block;
+    width: 34px; height: 34px;
+    position: absolute; top:0; right: -50px; background: url('/newk/newkintro/images/x.png');
+} */
+ul#introBox_list li:last-child{
+    margin-right: 0;
+}
+p.intro_img img{
+    width: 100%; display: block;
+}
+p.intro_text{
+    width: 100%; text-align: center; height: 54px;
+    position: absolute; top:50%; margin-top: -27px;
+    font: bold 1.938rem/54px "Noto Sans KR"; color: #333;
+}
+div#introbox_text{
+    width: 100%; height: auto; float: left; padding: 54px; box-sizing: border-box;
+    text-align: center;  
+}
+p#introbox_title{
+    font: bold 1.938rem/54px "Noto Sans KR"; color: #333;
+}
+p#introbox_title span{
+    background: #FFEDEC;
+}
+p#introbox_longtext{
+    padding-top: 54px; box-sizing: border-box;
+    font: normal 1rem/24px "Noto Sans KR"; color: #333;
+}
+div#moreBtn{
+    width: 286px; height: 52px; background: #8C58E7; 
+    float: left; border-radius: 8px; 
+    position: relative; left:50%; margin-left: -143px;
+    transition: 3s ease-out;
+
+}
+div#moreBtn a{
+    display: block; width: 100%;
+    text-align: center;
+    position: relative; top:0; 
+    font: normal 1.125rem/52px "Noto Sans KR"; color: #fff;
+    
+}
+div#moreBtn:hover{
+    position: relative; top:5px;
+    box-shadow: 2px 2px 2px gray;
+   
+}
+/* 인트로 영역 끝 */
+/* 미디어스크린시작 */
+@media screen and (max-width:1200px){
+    body,html{
+        font-size:12px; 
+    }
+    
+    section#introTitle_inner,section#intro_inner{
+      width: 100%;
+    }
+  
+}
+
+@media screen and (max-width:980px){
+    
+    div#intro_wrap{
+        height: 1600px;
+    }
+    ul#introBox_list li{
+        float: none; left:50%; margin-left: -150px;
+        margin-bottom: 30px;
+    }
+    ul#introBox_list li{
+        margin-bottom: none;
+    }
+  
+}

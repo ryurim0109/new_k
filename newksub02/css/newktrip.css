@@ -1,0 +1,103 @@
+div#newkTrip_wrap{
+    width: 100%; height: auto; position: relative;
+    float: left; min-width: 768px;
+}
+section#newkTrip{
+    width: 1200px; height: 100%; position: relative;
+    margin: 0 auto;
+}
+h2#newkTripTitle{
+    width: 100%; float: left;
+    margin-top: 72px;
+    font:bold 1.125rem/42px "Noto Sans KR"; color: #333;
+    position: relative; padding-left: 10px; box-sizing: border-box;
+}
+h2#newkTripTitle::before{
+    content: ""; display: block;
+    width: 4px; height: 42px; background: #333;
+    position: absolute; top:0; left: 0;
+}
+div#filter{
+    width: 100%; float: left; 
+    text-align: right; margin-top: 72px;
+    font:normal 1rem "Noto Sans KR"; 
+}
+div#newkTrip_box{
+    width: 100%; float: left;
+    margin-top: 40px; 
+}
+ul#newkTrip_box_list{
+    width: 100%; float: left; 
+}
+ul#newkTrip_box_list li{
+    width: 100%; height: 314px;
+    border-top:solid 1px #000; box-sizing: border-box;
+    padding:32px; position: relative;
+}
+ul#newkTrip_box_list li:last-child{
+    border-bottom: solid 1px #000;
+}
+
+div.newkTrip_img{
+    width: 250px; height: 250px; position: relative;
+    border-radius: 8px; overflow: hidden;
+    float: left;
+}
+div.newkTrip_img a img{
+    display: block; width: 100%;
+}
+a.wishList{
+    position: absolute; right: 10px; bottom: 10px;
+    color: #fff;
+}
+div.newkTrip_t{
+    float: left;
+    padding-left: 64px; box-sizing: border-box;
+}
+p.newkTrip_t_title{
+    width: 100%; padding-top: 40px;
+    font:bold 1.188rem  "Noto Sans KR"; color: #333;
+}
+p.newkTrip_text{
+    width: 100%; padding-top: 40px;
+    font:normal 1rem/24px "Noto Sans KR"; color: #333;
+}
+p.hashtag{
+    width: 100%; padding-top: 40px;
+    font:normal 1rem/24px "Noto Sans KR"; 
+}
+p.hashtag a{
+    color: #4A678C;
+}
+p.newkTrip_btn{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+p.newkTrip_btn a{
+    padding-right: 15px; box-sizing: border-box;
+    
+}
+a.red i{
+    color: #ff0000;
+}
+div#more_btn{
+    float: left;
+    width: 148px; height: 50px; position: relative;
+    left: 50%;  margin:80px 0 80px -74px;
+    background: #6155A6; border-radius: 8px;
+    text-align: center;
+}
+div#more_btn a{
+    display: block; height: 50px;
+    font:bold 1.125rem/50px "Noto Sans KR"; color: #fff;
+}
+@media screen and (max-width:1200px){
+    body,html{
+        font-size:12px; 
+    }
+    section#newkTrip{
+        width: 100%;
+    }
+    
+}

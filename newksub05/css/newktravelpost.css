@@ -1,0 +1,110 @@
+div#newkpost_wrap{
+    width: 100%; height: auto; position: relative;
+    float: left; min-width: 768px;
+}
+section#newkpost{
+    width: 1200px; height: 100%; position: relative;
+    margin: 0 auto;
+}
+h2#newkpostTitle{
+    width: 100%; float: left;
+    margin-top: 72px;
+    font:bold 1.125rem/42px "Noto Sans KR"; color: #333;
+    position: relative; padding-left: 10px; box-sizing: border-box;
+}
+h2#newkpostTitle::before{
+    content: ""; display: block;
+    width: 4px; height: 42px; background: #333;
+    position: absolute; top:0; left: 0;
+}
+p#postsubTitle{
+    width: 100%; float: left; margin-top: 24px;
+    font:normal 1rem/42px "Noto Sans KR"; color: #333;
+}
+p#postsubTitle a{
+    text-decoration: underline;
+}
+div#filter{
+    width: 100%; float: left; 
+    text-align: right; margin-top: 72px;
+    font:normal 1rem "Noto Sans KR"; 
+}
+div#post_box{
+    width: 100%; height: auto; float: left;
+    position: relative; margin-top: 40px;
+}
+ul#post_box_list{
+    width: 100%; height: 100%; float: left;
+    position: relative;
+}
+ul#post_box_list li{
+    width: 100%; height: 232px; border: solid 1px #C4C4C4;
+    box-sizing: border-box; padding: 16px 50px;
+    position: relative; margin-bottom: 60px;
+}
+ul#post_box_list li>div{
+    float: left;
+}
+div.postprofile{
+    width: 100%;  float: left;
+}
+p.profile_img{
+    width: 40px; height: 40px; border-radius: 20px;
+    box-sizing: border-box; border: solid 1px #C4C4C4;
+    overflow: hidden; float: left; margin-right: 20px;
+}
+p.profile_img img{
+    width: 100%; 
+}
+p.profile_text{
+    font:normal 0.875rem "Noto Sans KR";
+    text-align: justify;
+}
+p.profile_time{
+    font:normal 0.875rem "Noto Sans KR";  color: #777;
+}
+div.post_t{
+ width: 100%; float: left; 
+ margin-top: 16px;
+}
+p.post_title{
+    font:bold 1.125rem "Noto Sans KR";
+    margin-bottom: 16px;
+}
+p.post_text{
+    font:normal 1rem "Noto Sans KR";
+    margin-bottom: 16px;
+}
+p.post_like{
+    font:normal 0.875rem "Noto Sans KR";
+}
+p.post_like a{
+    color:#777;
+}
+div.post_right{
+    width: 164px; height: 164px; position: absolute; right: 50px;
+    top:32px;
+}
+div.post_right a img{
+    display: block; width: 100%;
+}
+div#more_btn{
+    float: left;
+    width: 148px; height: 50px; position: relative;
+    left: 50%;  margin:80px 0 80px -74px;
+    background: #6155A6; border-radius: 8px;
+    text-align: center;
+}
+div#more_btn a{
+    display: block; height: 50px;
+    font:bold 1.125rem/50px "Noto Sans KR"; color: #fff;
+}
+@media screen and (max-width:1200px){
+    body,html{
+        font-size:12px; 
+    }
+    section#newkpost{
+        width: 100%;
+    }
+    
+}

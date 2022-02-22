@@ -1,0 +1,244 @@
+/* 메인비쥬얼영역시작 */
+section#visual_wrap{
+    width: 100%; height:240px; position: relative;
+    top:0; left:0;
+}
+ul#visual_list{
+     position: relative; top:0; left:0;
+}
+ul#visual_list li{
+  position: relative; top:0; left:0;
+}
+p.visual_img{
+    width:100%;  
+}
+p.visual_img img{
+    width:100%; display: block;
+}
+p.visual_text{
+    width:100%; position:absolute; left:50px; top:55px; 
+    
+}
+p.visual_text a{
+  display: block; text-align: left;
+  color:#FAFAFC; font:normal 16px "Noto Sans KR";
+}
+
+/* 메인비쥬얼영역끝 */
+/* 바로가기 메뉴 영역 시작 */
+section#goMenu{
+    width: 95%; height: 160px; 
+    margin: 32px auto;
+}
+ul#goMenu_list{
+    width: 100%; height: 100%;
+    display: grid; grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr); grid-gap:16px;
+}
+ul#goMenu_list li{
+    width: 100%; height: 100%; border-radius: 8px;
+    text-align: center; box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    padding:7px 0; box-sizing: border-box; border: 1px solid #F2F2F5;
+}
+ul#goMenu_list li a{
+    display: block;
+    width: 100%;
+    font:normal 10px "Noto Sans KR";
+    padding-top: 4px; box-sizing: border-box;
+}
+/* 바로가기 메뉴 영역 끝 */
+/* 외국같은 이색여행지 시작 */
+section#hotplace_wrap{
+    width: 100%; height: 219px; float: left;
+    background: #E2D1FF; padding:0 16px; box-sizing: border-box;
+    overflow: hidden;
+}
+h2.contents_title{
+    width: 100%; font:bold 16px "Noto Sans KR";
+    padding: 24px 0; box-sizing: border-box;
+}
+ul#hotplace{
+    width: 1128px;
+}
+ul#hotplace li{
+    width: 120px; height: 120px; float: left; border-radius: 60px;
+    box-sizing: border-box; overflow: hidden; margin-right: 24px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+ul#hotplace li:last-child{
+    margin-right: 0;
+}
+ul#hotplace>li>a>img>img{
+    width: 100%; display: block;
+}
+/* 외국같은 이색 여행지 끝 */
+/* 이런여행은 어떠세요 시작 */
+section#aboutTrip_wrap{
+    width: 100%; height: auto; float: left;
+    padding:16px 16px 32px 16px; box-sizing: border-box; overflow: hidden;
+}
+ul#aboutTrip{
+    width: 408px;
+}
+ul#aboutTrip li{
+    width: 120px; height: 150px; margin-right: 24px;
+    float: left; overflow: hidden;
+    border-radius: 8px; background:#FAFAFC;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+ul#aboutTrip li:last-child{
+    margin-right: 0;
+}
+p.aboutTrip_img{
+    position: absolute;
+    width: 100%; top:0;
+}
+p.lighter{
+    background: #FFEDEC;
+}
+p.secondary{
+    background: #FFBABA;
+}
+
+p.aboutTrip_title{
+    position: absolute; top: 100px;
+    width: 100%; 
+    font:bold 14px "Noto Sans KR";
+}
+p.aboutTrip_text{
+    position: absolute; top: 120px;
+    width: 100%; 
+    font:normal 12px "Noto Sans KR";
+}
+/* 이런여행은 어떠세요 끝 */
+/* 축제소식 시작 */
+section#festival_wrap{
+    width: 100%; height: 37px; float: left;
+    background: #EBEBF0;
+}
+div#festival{
+    width: 100%; text-indent: 16px;
+    font:normal 12px/37px "Noto Sans KR";
+    position: relative; top:0; left: 0;
+}
+div#festival span{
+    position: absolute; right: 16px; 
+    color: #8F90A6;
+}
+/* 축제소식 끝 */
+/* 여행글 공유 시작 */
+section#shareTrip_wrap{
+    width: 100%; height: auto; float: left;
+    padding:16px 16px 32px 16px;
+    box-sizing: border-box;
+}
+ul#shareTrip{
+    width: 100%;
+}
+ul#shareTrip li{
+    width: 100%; height: 80%;
+    border-radius: 8px; overflow: hidden;
+    position: relative; top:0; left: 0;
+    margin-bottom: 24px;
+}
+ul#shareTrip li:last-child{
+    margin-bottom: 0;
+}
+ul#shareTrip>li>a>img{
+    width: 100%; display: block;
+}
+div.share_t{
+    width: 100%; height: 100%;
+    background:rgba(50, 50, 50, 0.7);
+    position: absolute; top:0; left: 0;
+}
+div.share_t a{
+    display: block;
+    width: 80%; left:50%; margin-left: -40%;
+    position: relative; top:20%;
+    color:#fff;
+}
+div.share_t a img{
+    display: block; width: 24px; height: 24px;
+    float: left;
+}
+div.share_t a span{
+    position: relative; left:4px;
+    font:bold 12px/24px "Noto Sans KR";
+}
+p.share_text{
+    width: 80%; left:50%; margin-left: -40%;
+    bottom:20%;
+    position: absolute; 
+    text-align: justify; color:#fff;
+    font:bold 12px "Noto Sans KR";
+}
+/* 여행글 공유 끝 */
+/* 허니문호텔 배너시작 */
+div#couple_wrap{
+    width: 100%; height: auto; float: left;
+    padding: 0 16px 32px 16px; box-sizing: border-box;
+}
+div#couple_banner{
+    width: 100%; height:80px;background-color: #E2D1FF; 
+    border-radius: 8px; position: relative; top:0; left:0; overflow: hidden;
+}
+div#couple_banner img{
+    position: absolute; right: 0;
+    width: 80px; height: 80px; 
+    
+}
+div#couple_banner p{
+    position: absolute; top:15px;
+    width: 100%; padding-left: 16px;
+}
+a#couple_title{
+    display: block; float: left;
+    width: 100%;
+    font:bold 13px "Noto Sans KR"; 
+}
+a#couple_text{
+    display: block; float: left;
+    width: 100%;
+    font:normal 12px "Noto Sans KR"; 
+}
+/* 허니문호텔 배너끝 */
+
+/* 미디어스크린 시작 */
+@media screen and (max-width:320px){
+    section#visual_wrap{
+        height: 130px;
+    }
+}
+@media screen and (orientation:landscape){
+    div.swiper-pagination{
+        font-size:14px;
+    }
+    section#visual_wrap{
+        height: 300px;
+    }
+    p.visual_text{
+        top:70px; left:70px;
+    }
+    p.visual_text a{
+        font-size: 18px;
+    }
+    section#hotplace_wrap{
+        height: 300px;
+    }
+    ul#hotplace li{
+        width: 200px; height: 200px; border-radius: 60px;
+    }
+    section#aboutTrip_wrap{
+        height: 400px;
+    }
+    ul#aboutTrip li{
+        width: 140px; height: 260px;
+    }
+    p.aboutTrip_title{
+        top:200px; font-size: 16px;
+    }
+    p.aboutTrip_text{
+        top:220px; font-size: 16px;
+    }
+}

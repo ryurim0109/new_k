@@ -1,0 +1,351 @@
+/* 비쥬얼영역시작 */
+div#visual_wrap{
+    width: 100%; height:auto; float: left; position: relative; top:0; left:0;
+   overflow: hidden; min-width: 768px;  
+}
+ul#visual_list{
+    width: 100%; height: 100%; position: relative; left: 0; top:0;
+}
+ul#visual_list li{
+    width: 33.3%; height: 100%; float: left; position: relative;
+}
+ul#visual_list li img{
+ width: 100%; display: block;
+}
+div.visual_t{
+    width: 50%;
+    position: absolute;
+    top:5%; left:50%; margin-left: -25%;
+    opacity:0; 
+}
+p.visual_title{
+   font: normal 2rem 'kotra'; color:#FAFAFC;
+}
+p.visual_text{
+    font:normal 1.125rem "Noto Sans KR";color:#FAFAFC; margin-top: 15px;
+}
+div#btn{
+    width:1200px; height: 100%;
+    position:absolute; left:50%; margin-left:-600px; top:0px; 
+}
+a#prevBtn{
+    display: block; width: 32px; height: 32px; background:rgba(196,196,196,0.5); border-radius: 32px;
+    text-align: center; line-height: 32px; color: #fff;
+    position: absolute; left:20px; top:50%; margin-top:-16px; 
+}
+a#nextBtn{
+    display: block; width: 32px; height: 32px; background:rgba(196,196,196,0.5); border-radius: 16px;
+    text-align: center; line-height: 32px; color: #fff;
+    position: absolute; right:20px; top:50%; margin-top:-16px; 
+}
+div#indicate{
+  width: 30%;position: absolute; bottom:10%; height: 5px; background: #FAFAFC; opacity: 0.8;
+  left:50%; margin-left: -15%;
+}
+div#colorIndicate{
+    width: 33.33%; height: 5px; position: absolute; top:0; left: 0; background:#ba93fc ;
+}
+/* 비쥬얼영역끝 */
+/* 컨텐츠영역시작 */
+div#contents_wrap{
+  width: 100%; height: auto;float: left; 
+}
+div#hotplace_wrap{
+  width: 100%; height: auto; float:left; 
+}
+section#hotplace_inner{
+  width: 1200px;  height: 980px;
+  position: relative; top:0; left:0; margin: 0 auto; box-sizing:border-box; 
+  padding-top:85px; min-width: 768px;
+}
+h2#hotplace_title{
+  position:relative; left:0px; top:50px; opacity:0; 
+}
+h2.contents_title{
+  width:100%;height: 35px; text-align: center; 
+}
+h2.contents_title a{
+  font:bold 1.313rem "Noto Sans KR"; 
+}
+/* hotplace 컨텐츠영역 시작 */
+ul#hotplace{
+  width: 100%; height: auto; display: grid; grid-template-columns: repeat(4,1fr); grid-template-rows: repeat(2,1fr);
+  grid-gap:1.875rem; margin-top: 30px; 
+}
+ul#hotplace li{
+  position:relative; left:0px; top:100px; opacity:0; 
+}
+ul#hotplace li p{
+  text-align: center; box-sizing: border-box;
+}
+div.place_text_wrap{
+  width: 100%; height: 78px; 
+  position: relative; top:0; left: 0;
+}
+p.place_img{
+  width:100%; height:260px;  overflow: hidden;margin-bottom:15px; 
+  transition:0.3s ease-out; 
+}
+p.place_img:hover{
+   box-shadow:5px 5px 5px gray;
+}
+p.place_img a{
+  width:100%; height:100%; display:block; transition:0.3s ease-out;
+}
+p.place_img a:hover{
+  transform:scale(1.2,1.2)
+}
+p.place_img img{
+  width: 100%;
+}
+p.place_title{
+  font:bold 1rem "Noto Sans KR";
+}
+p.place_text{
+  font:normal 0.875rem "Noto Sans KR";
+}
+p.place_location{
+    width: 24px; height: 24px; position: absolute; left: 0; top:0; 
+}
+p.place_location a{
+    display:block; color:#6155A6;
+}
+/* hotplace 컨텐츠영역 끝 */
+/* aboutTrip 컨텐츠영역 시작 */
+div#aboutTrip_wrap{
+  width: 100%; height: auto; /*background: #FFBABA;*/ float:left; min-width: 768px; background: url('/newk/images/contents_bg01.jpg') no-repeat fixed;
+}
+h2#aboutTrip_title{
+  position: relative; top:50px; left: 0; opacity: 0;
+}
+section#aboutTrip_inner{
+  width: 1200px; height: 650px;
+  position: relative; top:0; left:0; margin: 0 auto;
+  padding-top:85px; min-width: 768px;
+}
+section#aboutTrip_inner>div{
+    float: left; position: relative; top:50px; left: 0; opacity: 0;
+}
+div#aboutTrip_left{
+    width: 76.5%; height: auto; margin-top: 40px;
+}
+div#aboutTrip{
+  width: 100%; height: 310px;float: left;
+}
+ul#aboutTrip_list{
+ width: 100%; height: 310px; float: left;
+ text-align: center;
+}
+ul#aboutTrip_list li{
+    width: 32%; height: 310px; float: left; margin-right: 2%;
+    background: #FFF;
+    position: relative; top:0; left: 0;
+}
+ul#aboutTrip_list li::after{
+    content: ""; display: block; width: 90%; height: 1px; 
+    background: #ccc; position: absolute; left: 50%; margin-left: -45%;
+    bottom:15%;
+}
+ul#aboutTrip_list li:last-child{
+    margin-right:0;
+}
+ul#aboutTrip_list li p{
+    margin-top: 8px;
+}
+p.aboutTrip_title{
+    font:bold 1rem "Noto Sans KR";
+}
+p.aboutTrip_text{
+    font:normal 0.875rem "Noto Sans KR";
+}
+p.aboutTrip_eyes{
+    width: 46px; height: 23px;
+    position: absolute; left: 5%; bottom: 3%;
+}
+p.aboutTrip_heart{
+    width: 46px; height: 23px;
+    position: absolute; right: 5%; bottom: 3%;
+}
+p.aboutTrip_heart a{
+    color: #ccc;
+}
+p.aboutTrip_heart a.red{
+  color: #ff0000;
+}
+div#festival{
+  width: 100%; height: 166px; float: left; background: #fff; 
+  margin-top: 24px; 
+}
+h3#festival_title{
+  width: 90%; height: 74px; border-bottom: solid 1px #c4c4c4; box-sizing: border-box;
+  margin: 0 5%;
+}
+h3#festival_title a{
+  display: block; width: 100%; height: 35px; text-indent: 5px;
+  font:bold 1.313rem "Noto Sans KR"; padding-top: 25px; position: relative; top:0; left: 0;
+}
+h3#festival_title a span{
+ position: absolute; right: 5px;
+}
+ul#festival_list{
+  width: 100%; height: 92px; float: left;
+}
+ul#festival_list li{ 
+  width: 90%; height: 46px; border-bottom: solid 1px #c4c4c4; box-sizing: border-box; margin: 0 5%;
+}
+ul#festival_list li a{
+  display: block; text-indent: 5px; 
+  font:normal 0.875em/46px "Noto Sans KR";
+}
+ul#festival_list li:last-child{
+  border-bottom:none;
+}
+div#hidecouple{
+  width: 100%; height: 214px; *background: #E2D1FF; float: left; margin-top: 24px; 
+  display: none;
+}
+div#aboutTrip_right{
+  width: 21.5%; height: 499px; margin-top: 40px; margin-left: 23px; 
+}
+div#couple_banner{
+  width: 100%; height: 100%; background: url("/newk/images/couple_banner.jpg") no-repeat;
+}
+ul#couple_banner_list{
+  width: 100%; height: 100%; position: relative; top:0;left: 0;
+}
+ul#couple_banner_list li p{
+  text-align: center;
+}
+p#couple_banner_title{
+  font: bold 1.313rem "Noto Sans KR"; padding-top: 36px;
+}
+p#couple_banner_text{
+  font: normal 1rem "Noto Sans KR"; padding-top: 60px;
+}
+p#plus_icon{
+  padding-top: 20px; 
+}
+p#plus_icon a{
+  display: block; width: 100%; transition: 0.3s ease-out;
+}
+p#plus_icon:hover >a{
+  transform: scale(2,2); color: #8C58E7;
+}
+ul#hidecouple_list{
+  width: 100%;
+}
+/* aboutTrip 컨텐츠영역 끝*/
+/* shareTrip 컨텐츠영역 시작 */
+div#shareTrip_wrap{
+  width: 100%;  height: auto; float:left; 
+}
+h2#share_title{
+  position: relative; top:50px; left: 0; opacity: 0; 
+}
+section#shareTrip_inner{
+  width: 1200px;height: 600px; 
+  position: relative; top:0; left:0; margin: 0 auto;
+  padding-top:85px;  min-width: 768px;
+}
+ul#shareTrip_list{
+  width: 100%; height: 382px; margin-top: 40px;
+}
+ul#shareTrip_list li{
+  width: 32%; height: 382px; float: left; margin-right: 2%; position: relative; top:50px; left:0;
+  margin-bottom: 2%; opacity: 0;
+}
+ul#shareTrip_list li::after{
+  display: block; content: ""; position: absolute; left:0; bottom: 0;
+  width: 100%; height: 130px; background: rgba(32,32,32,0.5);
+  transition: 0.3s ease-out;
+}
+ul#shareTrip_list li:hover::after{
+  display: block; content: "";
+ position: absolute; left: 0; bottom: 0;
+ height: 382px; background: rgba(32,32,32,0.5);
+}
+ul#shareTrip_list li:last-child{
+  margin-right: 0;
+}
+ul#shareTrip_list li p{
+  width: 100%; float:left;
+}
+p.shareTrip_img{
+  position: absolute; bottom:0;left: 0;
+}
+p.shareTrip_img img{
+  width: 100%; height: 382px; display: block;
+}
+p.shareTrip_title{
+  width: 100%;  position: absolute; bottom:0px; left: 0px;
+   text-align: center; z-index: 9;
+}
+p.shareTrip_title a{
+  width: 100%; height: 130px; display: block; color: #fff;
+  font:bold 1.250rem/130px "Noto Sans KR";
+}
+div#write{
+  width: 10%; height: 44px; background: #8C58E7;
+  position: absolute; right: 0; top:135px; text-align: center; opacity: 0;
+}
+div#write a{
+  width: 100%; height: 100%; display: block;
+  color:#fff; font:bold 1rem/44px "Noto Sans KR";
+}
+div#write:hover >a{
+ text-decoration: underline;
+}
+/* 미디어스크린시작 */
+@media screen and (max-width:1200px){
+    body,html{
+        font-size:12px; 
+    }
+    div#btn{
+        width:100%; margin-left:-50%; 
+    }
+    section#hotplace_inner,section#aboutTrip_inner,section#shareTrip_inner{
+      width: 100%;
+    }
+    div#aboutTrip_right{
+      display: none;
+    }
+    div#aboutTrip_left{
+      width: 100%;
+    }
+    
+}
+@media screen and (max-width:768px){
+    body,html{
+    font-size:10px; 
+}
+section#hotplace_inner{
+    height: 1800px;
+}
+  section#shareTrip_inner{
+    height: 1300px;
+  }
+    ul#hotplace{
+      grid-template-columns:repeat(2,1fr); grid-template-rows: repeat(4,1fr);
+    }
+    ul#shareTrip_list li{
+      width: 80%; float: none; 
+      left:50%; margin-left: -40%;
+    }
+}
+/* @media screen and (max-width:414px){
+    p.visual_title{
+        display: none;
+    }
+    body,html{
+        font-size:8px; 
+    }
+    p.visual_text{
+        margin-top:10px;
+    }
+    div#btn{
+        display: none;
+    }
+    ul#hotplace{
+      grid-template-columns:1fr; grid-template-rows: repeat(8,1fr);
+    }
+} */

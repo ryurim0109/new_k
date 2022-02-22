@@ -1,0 +1,179 @@
+@font-face{
+    font-family: 'kotra'; src: url("/newk/font/KOTRA_BOLD.eot");src: url("/newk/font/KOTRA_BOLD.ttf");src: url("/newk/font/KOTRA_BOLD.woff");
+}
+/* 숨기기영역시작 */
+ul#skipmenu li a{
+    width: 1px; height: 1px; font-size:0; line-height:0;
+    position: absolute; top:0; left:0; z-index: 9999;
+}
+ul#skipmenu li a:focus{
+    width:100%; height: 30px; text-align: center;
+    font:normal 14px/30px "Noto Sans KR"; background: #000; color: #fff;
+}
+.hidden{
+    width: 1px; height: 1px; font-size:0; line-height:0;
+    position: absolute; top:0; left:0; 
+}
+/* 숨기기영역끝 */
+.clearFix,.clearFix::after,.clearFix::before{
+    display: block; content: ""; clear: both;
+}
+/* 상단영역시작 */
+div#header_wrap{
+    width: 100%; height: 178px;
+    border-bottom: solid 1px #F2F2F5; box-sizing: border-box; min-width: 768px;
+    position: relative; top:0; left:0; background:white; 
+}
+header#header_inner{
+    width: 1200px; height: 178px; margin: 0 auto;
+    position: relative; top:0; left:0;  min-width: 768px;
+    /* min-width: 768px; */ 
+}
+h1#logo{
+ width: 88px; height: 74px; position: absolute; left:50%; margin-left:-44px; top:0px;
+}
+form#search{
+    width: 164px; height: 24px; left: 29px; top:77px; 
+    position: absolute;    
+}
+form#search fieldset{
+    width: 164px; height: 24px; border-bottom: solid 1px #000;
+}
+input#search_box{
+    width: 140px; height: 24px; border:none;
+}
+form#search fieldset a{
+    display: block;
+    width: 24px; height: 24px; position: absolute;  right: 0px; top:0px;
+}
+nav#topmenu{
+    width: 23.3%;/* 280px; */ height: 17px; float: right; margin-right: 29px; margin-top: 32px;
+}
+ul#topmenu_list{
+    width: 100%; height: 100%;display: flex;flex-direction: row;flex-wrap: nowrap; justify-content: space-between;
+}
+ul#topmenu_list li:hover >a{
+    color:#A685E2;
+}
+nav#topmenu a{
+    font:normal 0.750rem"Noto Sans KR";
+}
+nav#mainmenu{
+    width: 58.3%;/* 700px */ height: 50px; position: absolute; left:50%; margin-left:-29.15% ; bottom: 0px;
+    text-align: center; 
+}
+ul#mainmenu_list{
+    width: 100%; height: 100%;
+    float: left;
+}
+ul#mainmenu_list>li{
+    width: 20%; float: left; position:relative; left:0px; top:0px; 
+   
+}
+ul#mainmenu_list>li>a{
+    display: block;
+    font:bold 1em/50px "Noto Sans KR";
+}
+a.purple{
+  color: #A685E2;
+}
+ul#mainmenu_list li::before{
+    display:block; content: ""; 
+    width: 70%; height: 2px;
+    background: #8C58E7; position: absolute; left: 50%; margin-left: -35%;
+    bottom:0; box-sizing: border-box;
+    transform:scale(0,1); transition:0.3s ease-out;
+}
+ul#mainmenu_list li.selected::before{
+    transform:scale(1,1)
+}
+ul.submenu{
+    width: 100%;
+    position: absolute; top:90px;
+    z-index: 99; left:0; text-align: center;
+}
+ul.submenu li{
+  width: 100%;
+}
+ul.submenu li a{
+  font:bold 0.875rem/32px "Noto Sans KR"; 
+  display: block;
+}
+ul.submenu>li:hover >a{
+  color:#A685E2;
+}
+/* 상단영역끝 */
+/* 하단영역시작 */
+div#footer_wrap{
+    width: 100%; height: 196px; background: #000; min-width: 768px;
+}
+footer#footer_inner{
+    width: 1200px; height: 196px; margin: 0 auto;  min-width: 768px;
+}
+footer#footer_inner>div{
+    float: left;
+}
+div#footmenu{
+    width: 85%; height: 126px; margin-top: 35px;
+}
+ul#footmenu_list{
+    width: 100%; height: 23px; 
+}
+ul#footmenu_list li{
+    float: left; margin-right: 5%; 
+}
+ul#footmenu_list li a{
+    display: block; color: #fff;
+    font:normal 0.875rem "Noto Sans KR"; 
+}
+div#copyright{
+    width: 100%; height: 23px; margin-top: 80px;
+}
+div#copyright p{
+    color: #fff;
+    font:normal 0.875rem "Noto Sans KR"; 
+}
+div#newksns{
+    width: 15%; height: 90px; margin-top: 35px; 
+}
+h3#newksns_title{
+    color: #fff;
+    font:normal 1.188rem "Noto Sans KR"; 
+}
+ul#newksns_list{
+    width: 100%; height: 43px; margin-top: 25px;
+    margin-left: 10px;
+}
+ul#newksns_list li{
+    float: left; margin-right: 15%; 
+}
+ul#newksns_list li:last-child{
+    margin-right: 0;
+}
+ul#newksns_list li a{
+    display: block; width: 28px; height: 28px;
+}
+ul#newksns_list li img{
+    display: block; width: 100%;
+}
+
+/* 미디어스크린시작 */
+@media screen and (max-width:1200px){
+    header#header_inner,footer#footer_inner{
+     width: 100%;
+    }
+    ul#newksns_list{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:768px){
+    h3#newksns_title{
+        display: none;
+    }
+    div#newksns{
+        margin-top: 0;
+    }
+    ul#newksns_list li{
+        float: none; margin-left: 30px; margin-bottom: 10px;
+    }
+}
